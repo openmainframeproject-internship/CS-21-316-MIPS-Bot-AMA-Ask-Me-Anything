@@ -7,10 +7,10 @@ a better understanding of the problems you encountered during the developmemnt o
 
 | Folder | Description |
 |---|---|
-| Documentation |  all documentation the project team has created to describe the architecture, design, installation and configuratin of the peoject |
-| Notes and Research | Relavent information useful to understand the tools and techniques used in the project |
-| Status Reports | Project management documentation - weekly reports, milestones, etc. |
-| scr | Source code - create as many subdirectories as needed |
+| [Documentation](https://github.com/openmainframeproject-internship/CS-21-316-MIPS-Bot-AMA-Ask-Me-Anything/tree/master/Documentation) |  all documentation the project team has created to describe the architecture, design, installation and configuratin of the peoject |
+| [Notes and Research](https://github.com/openmainframeproject-internship/CS-21-316-MIPS-Bot-AMA-Ask-Me-Anything/tree/master/Notes%20and%20Research) | Relavent information useful to understand the tools and techniques used in the project |
+| [Status Reports](https://github.com/openmainframeproject-internship/CS-21-316-MIPS-Bot-AMA-Ask-Me-Anything/tree/master/Status%20Reports) | Project management documentation - weekly reports, milestones, etc. |
+| [src](https://github.com/openmainframeproject-internship/CS-21-316-MIPS-Bot-AMA-Ask-Me-Anything/tree/master/src) | Source code - create as many subdirectories as needed |
 
 ## Project Team
 - *Len Santaluchia*  - *Linux Foundation* - Mentor
