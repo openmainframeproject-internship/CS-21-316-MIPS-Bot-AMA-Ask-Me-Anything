@@ -10,7 +10,7 @@ Status Report Template: https://github.com/openmainframeproject-internship/resou
 | Project Plan | Overall week by week plan of milestones | |
 | Week 1 Status Report | 9/4/2020 | [ProjStatus9.4](/Status%20Reports/ProjStatus9.4.pdf) | 
 | Week 2 Status Report | 9/11/2020 | [ProjStatus9.11](/Status%20Reports/ProjStatus9.11.pdf) |
-| Week 3 Status Report | | |
+| Week 3 Status Report | 9/18/2020 | [ProjStatus9.18](/Status%20Reports/ProjStatus9.18.pdf) |
 | Week 4 Status Report | | |
 | Week 5 Status Report | | |
 | Week 6 Status Report | | |
