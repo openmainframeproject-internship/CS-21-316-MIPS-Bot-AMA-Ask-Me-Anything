@@ -1,4 +1,4 @@
-# Source Code Folder
+# Resources
 To be structured as needed by project team.
 
 
