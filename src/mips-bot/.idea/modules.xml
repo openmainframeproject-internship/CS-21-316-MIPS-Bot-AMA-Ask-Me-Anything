@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/senior-design.iml" filepath="$PROJECT_DIR$/.idea/senior-design.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SeniorDesignCS21-316/mips-bot.iml" filepath="$PROJECT_DIR$/SeniorDesignCS21-316/mips-bot.iml" />
     </modules>
   </component>
 </project>

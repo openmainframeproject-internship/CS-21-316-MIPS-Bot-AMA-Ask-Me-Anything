@@ -7,8 +7,8 @@ var express = require('express');
 var bodyParser = require('body-parser');
 // eslint-disable-next-line no-unused-vars
 var mongoose = require('mongoose');
-const connectDB = require('./config/db.js');
-var logger = require('./model/Log.js');
+const connectDB = require('./mips-bot/config/db.js');
+var logger = require('./mips-bot/model/Log.js');
 //var cors = require('cors');
 var AssistantV2 = require('ibm-watson/assistant/v2');
 const { IamAuthenticator } = require('ibm-watson/auth');

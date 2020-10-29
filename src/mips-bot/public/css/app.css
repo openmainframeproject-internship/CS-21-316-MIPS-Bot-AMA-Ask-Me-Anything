@@ -196,7 +196,7 @@ div {
 .from-watson.latest.top p:before {
   content: ".";
   color: #9855D4;
-  background-image: url("../img/marker_image.png");
+  background-image: url("mips-bot/public/img/marker_image.png");
   background-size: 0.3125rem 1.3125rem;
   position: absolute;
   z-index: 2;
@@ -352,8 +352,8 @@ html{
 
 @font-face {
   font-family: 'Helvetica Neue for IBM';
-  src: url('../fonts/roman/h-n-roman.woff2') format('woff2'),
-  url('../fonts/roman/h-n-roman.woff') format('woff');
+  src: url('mips-bot/public/fonts/roman/h-n-roman.woff2') format('woff2'),
+  url('mips-bot/public/fonts/roman/h-n-roman.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
