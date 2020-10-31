@@ -1,0 +1,5 @@
+# Default ignored files
+/workspace.xml
+./src/mips-bot/.idea
+./src/mips-bot/views
+
