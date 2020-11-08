@@ -121,6 +121,6 @@ const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, function() {
     // eslint-disable-next-line
-    console.log(`Chat-bot running on http://localhost:${PORT}`.rainbow.bold);
+    console.log(`Chat-bot running on http://localhost:${PORT}`.rainbow.underline.bold);
 });
 
