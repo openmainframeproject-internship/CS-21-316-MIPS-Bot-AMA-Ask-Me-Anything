@@ -7,6 +7,12 @@
 | Installation Guide| How to install and configure the project |
 | User Guide | Any user interface instructions |
 
+
 ## Statement of Work
-  The goal of the MIPS Bot AMA Project is to establish a chatbot that can assist developers and new programmers with learning about the IBM Mainframe. The bot, powered by IBM Watson Assistant, will use a combination of machine learning and crowdsourcing to develop nuanced, and easily readable answers to general system queries, and specific api questions. 
-  The current model features simple intent driven dialogue, with information parsed from the zOS dictionary to supply answers. All relevant data and supplemental data is stored in a MongoDB instance. 
+<p>The goal of the MIPS Bot AMA Project is to establish a chatbot that can assist developers and new programmers with learning about the IBM Mainframe. The bot, powered by IBM Watson Assistant, will use a combination of machine learning and crowdsourcing to develop nuanced, and easily readable answers to general system queries, and specific api questions.</p> 
+
+
+
+## Architecture
+<p>The general approach is MVC. The model is Watson-assistant, which uses machine learning to interpret user dialogue and provide answers. The View will be our landing page, wchich will also supply information about the status of unanswered queries. The Model is a storage instance supplied by IBM, containing a z/OS dictionary. Errors and other information are logged to a MongoDB isntance. </p>
+
