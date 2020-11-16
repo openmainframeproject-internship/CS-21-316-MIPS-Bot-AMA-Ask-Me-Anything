@@ -367,6 +367,15 @@
       "description": "user requests help"
     },
     {
+      "intent": "no",
+      "examples": [
+        {
+          "text": "no"
+        }
+      ],
+      "description": "no"
+    },
+    {
       "intent": "request_def",
       "examples": [
         {
@@ -416,6 +425,14 @@
         }
       ],
       "description": "Handles a user asking for help relative to understanding a term, covers context where user specifies term using the @word entity"
+    },
+    {
+      "intent": "yes",
+      "examples": [
+        {
+          "text": "yes"
+        }
+      ]
     }
   ],
   "entities": [
@@ -449,6 +466,11 @@
         },
         {
           "type": "synonyms",
+          "value": "3GL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "abend",
           "synonyms": []
         },
@@ -465,6 +487,11 @@
         {
           "type": "synonyms",
           "value": "abnormal termination",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ABR",
           "synonyms": []
         },
         {
@@ -529,21 +556,12 @@
         },
         {
           "type": "synonyms",
-          "value": "addressing mode",
-          "synonyms": [
-            "AMODE"
-          ]
+          "value": "addressing mode (AMODE)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "Address Resolution Protocol",
-          "synonyms": [
-            "ARP"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "Address Resolution Protocol (ARP",
+          "value": "Address Resolution Protocol (ARP)",
           "synonyms": []
         },
         {
@@ -553,10 +571,8 @@
         },
         {
           "type": "synonyms",
-          "value": "adjacent link station",
-          "synonyms": [
-            "ALS"
-          ]
+          "value": "adjacent link station (ALS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -580,22 +596,13 @@
         },
         {
           "type": "synonyms",
-          "value": "Advanced Peer-to-Peer Networking®",
-          "synonyms": [
-            "APPN"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "Advanced Peer-to-Peer Networking® (APPN",
+          "value": "Advanced Peer-to-Peer Networking® (APPN)",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "Advanced Program-to-Program Communication",
-          "synonyms": [
-            "APPC"
-          ]
+          "value": "Advanced Program-to-Program Communication (APPC)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -634,10 +641,13 @@
         },
         {
           "type": "synonyms",
-          "value": "American Standard Code for Information Interchange",
-          "synonyms": [
-            "ASCII"
-          ]
+          "value": "American Standard Code for Information Interchange (ASCII)",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "AMODE",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -656,12 +666,37 @@
         },
         {
           "type": "synonyms",
+          "value": "AOR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "APAR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "APAR fix",
           "synonyms": []
         },
         {
           "type": "synonyms",
+          "value": "APF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "APF-authorized",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "API",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "APPC",
           "synonyms": []
         },
         {
@@ -681,10 +716,8 @@
         },
         {
           "type": "synonyms",
-          "value": "application-owning region",
-          "synonyms": [
-            "AOR"
-          ]
+          "value": "application-owning region (AOR)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -693,10 +726,8 @@
         },
         {
           "type": "synonyms",
-          "value": "application programming interface",
-          "synonyms": [
-            "API"
-          ]
+          "value": "application programming interface (API)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -706,6 +737,11 @@
         {
           "type": "synonyms",
           "value": "APPLY command",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "APPN",
           "synonyms": []
         },
         {
@@ -735,10 +771,8 @@
         },
         {
           "type": "synonyms",
-          "value": "area border router",
-          "synonyms": [
-            "ABR"
-          ]
+          "value": "area border router (ABR)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -747,7 +781,17 @@
         },
         {
           "type": "synonyms",
+          "value": "ARP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "ARPANET",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ASCII",
           "synonyms": []
         },
         {
@@ -772,24 +816,17 @@
         },
         {
           "type": "synonyms",
-          "value": "asynchronous",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
           "value": "asynchronous processing",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "Asynchronous Transfer Mode",
-          "synonyms": [
-            "ATM"
-          ]
+          "value": "Asynchronous Transfer Mode (ATM)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "AT-",
+          "value": "ATM",
           "synonyms": []
         },
         {
@@ -824,17 +861,13 @@
         },
         {
           "type": "synonyms",
-          "value": "authorized program analysis report",
-          "synonyms": [
-            "APAR"
-          ]
+          "value": "authorized program analysis report (APAR)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "authorized program facility",
-          "synonyms": [
-            "APF"
-          ]
+          "value": "authorized program facility (APF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -938,10 +971,8 @@
         },
         {
           "type": "synonyms",
-          "value": "basic information unit",
-          "synonyms": [
-            "BIU"
-          ]
+          "value": "basic information unit (BIU)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -955,10 +986,8 @@
         },
         {
           "type": "synonyms",
-          "value": "batch message processing",
-          "synonyms": [
-            "BMP"
-          ]
+          "value": "batch message processing (BMP) program",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1032,10 +1061,8 @@
         },
         {
           "type": "synonyms",
-          "value": "boundary function",
-          "synonyms": [
-            "BF"
-          ]
+          "value": "boundary function (BF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1049,10 +1076,8 @@
         },
         {
           "type": "synonyms",
-          "value": "branch network node",
-          "synonyms": [
-            "BrNN"
-          ]
+          "value": "branch network node (BrNN)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1062,6 +1087,11 @@
         {
           "type": "synonyms",
           "value": "bridge",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "BrNN",
           "synonyms": []
         },
         {
@@ -1126,6 +1156,11 @@
         },
         {
           "type": "synonyms",
+          "value": "cable \"in inventory",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "cache",
           "synonyms": []
         },
@@ -1156,17 +1191,18 @@
         },
         {
           "type": "synonyms",
-          "value": "carriage return",
-          "synonyms": [
-            "CR"
-          ]
+          "value": "carriage return (CR)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "Carrier Sense Multiple Access with Collision Detection",
-          "synonyms": [
-            "CSMA/CD"
-          ]
+          "value": "Carrier Sense Multiple Access with Collision Detection (CSMA/CD)",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CART",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1190,12 +1226,22 @@
         },
         {
           "type": "synonyms",
+          "value": "CCL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "CCW",
           "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "CDLC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CDRM",
           "synonyms": []
         },
         {
@@ -1210,6 +1256,11 @@
         },
         {
           "type": "synonyms",
+          "value": "CEC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "CEMT",
           "synonyms": []
         },
@@ -1220,31 +1271,23 @@
         },
         {
           "type": "synonyms",
-          "value": "central electronic complex",
-          "synonyms": [
-            "CEC"
-          ]
+          "value": "central electronic complex (CEC)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "central processing unit",
-          "synonyms": [
-            "CPU"
-          ]
+          "value": "central processing unit (CPU)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "central processor",
-          "synonyms": [
-            "CP"
-          ]
+          "value": "central processor complex (CPC)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "central processor complex",
-          "synonyms": [
-            "CPC"
-          ]
+          "value": "central processor (CP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1278,10 +1321,8 @@
         },
         {
           "type": "synonyms",
-          "value": "channel connection address",
-          "synonyms": [
-            "CCA"
-          ]
+          "value": "channel connection address (CCA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1300,28 +1341,22 @@
         },
         {
           "type": "synonyms",
-          "value": "channel subsystem",
-          "synonyms": [
-            "CSS"
-          ]
+          "value": "channel subsystem (CSS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "channel-to-channel",
-          "synonyms": [
-            "CTC"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "channel-to-channel adapter",
-          "synonyms": [
-            "CTCA"
-          ]
+          "value": "channel-to-channel adapter (CTCA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "channel-to-channel connection",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "channel-to-channel (CTC)",
           "synonyms": []
         },
         {
@@ -1347,6 +1382,16 @@
         {
           "type": "synonyms",
           "value": "CHPID",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CI",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CICS",
           "synonyms": []
         },
         {
@@ -1401,7 +1446,22 @@
         },
         {
           "type": "synonyms",
+          "value": "CLPA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "cluster",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CMOS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CMS",
           "synonyms": []
         },
         {
@@ -1412,6 +1472,11 @@
         {
           "type": "synonyms",
           "value": "CNN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "COBOL",
           "synonyms": []
         },
         {
@@ -1441,10 +1506,8 @@
         },
         {
           "type": "synonyms",
-          "value": "command and response token",
-          "synonyms": [
-            "CART"
-          ]
+          "value": "command and response token (CART)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1463,17 +1526,13 @@
         },
         {
           "type": "synonyms",
-          "value": "Common Business-Oriented Language",
-          "synonyms": [
-            "COBOL"
-          ]
+          "value": "Common Business-Oriented Language (COBOL)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "common service area",
-          "synonyms": [
-            "CSA"
-          ]
+          "value": "common service area (CSA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1487,10 +1546,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Communications Controller for Linux",
-          "synonyms": [
-            "CCL"
-          ]
+          "value": "Communications Controller for Linux (CCL)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1499,10 +1556,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Communications Storage Manager",
-          "synonyms": [
-            "CSM"
-          ]
+          "value": "Communications Storage Manager (CSM)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1526,10 +1581,8 @@
         },
         {
           "type": "synonyms",
-          "value": "complementary metal oxide semiconductor",
-          "synonyms": [
-            "CMOS"
-          ]
+          "value": "complementary metal oxide semiconductor (CMOS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1603,10 +1656,8 @@
         },
         {
           "type": "synonyms",
-          "value": "control interval",
-          "synonyms": [
-            "CI"
-          ]
+          "value": "control interval (CI)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1620,10 +1671,8 @@
         },
         {
           "type": "synonyms",
-          "value": "control section",
-          "synonyms": [
-            "CSECT"
-          ]
+          "value": "control section (CSECT)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1632,14 +1681,12 @@
         },
         {
           "type": "synonyms",
-          "value": "control unit",
-          "synonyms": [
-            "CU"
-          ]
+          "value": "control unit address",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "control unit address",
+          "value": "control unit (CU)",
           "synonyms": []
         },
         {
@@ -1659,10 +1706,8 @@
         },
         {
           "type": "synonyms",
-          "value": "conversational monitor system",
-          "synonyms": [
-            "CMS"
-          ]
+          "value": "conversational monitor system (CMS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1711,15 +1756,28 @@
         },
         {
           "type": "synonyms",
+          "value": "CP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CPC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "CP-CP session",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "create link pack area",
-          "synonyms": [
-            "CLPA"
-          ]
+          "value": "CPU",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "create link pack area (CLPA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1728,10 +1786,8 @@
         },
         {
           "type": "synonyms",
-          "value": "cross-domain resource manager",
-          "synonyms": [
-            "CDRM"
-          ]
+          "value": "cross-domain resource manager (CDRM)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1740,21 +1796,22 @@
         },
         {
           "type": "synonyms",
-          "value": "cross-system coupling facility",
-          "synonyms": [
-            "XCF"
-          ]
+          "value": "cross-system coupling facility (XCF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "cross-system extended services",
-          "synonyms": [
-            "XES"
-          ]
+          "value": "cross-system extended services (XES)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "cross-system restart",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CRU",
           "synonyms": []
         },
         {
@@ -1769,12 +1826,42 @@
         },
         {
           "type": "synonyms",
+          "value": "CSA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "CSCL",
           "synonyms": []
         },
         {
           "type": "synonyms",
+          "value": "CSECT",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "CSI",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CSM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CSMA/CD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CSS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CTC",
           "synonyms": []
         },
         {
@@ -1789,22 +1876,23 @@
         },
         {
           "type": "synonyms",
+          "value": "CU",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "cumulative service tape",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "Customer Information Control System",
-          "synonyms": [
-            "CICS"
-          ]
+          "value": "Customer Information Control System (CICS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "customer-replaceable unit",
-          "synonyms": [
-            "CRU"
-          ]
+          "value": "customer-replaceable unit (CRU)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1823,6 +1911,11 @@
         },
         {
           "type": "synonyms",
+          "value": "DASD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "DASD volume",
           "synonyms": []
         },
@@ -1833,17 +1926,13 @@
         },
         {
           "type": "synonyms",
-          "value": "database administrator",
-          "synonyms": [
-            "DBA"
-          ]
+          "value": "database administrator (DBA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "database management system",
-          "synonyms": [
-            "DBMS"
-          ]
+          "value": "database management system (DBMS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1857,17 +1946,13 @@
         },
         {
           "type": "synonyms",
-          "value": "data control block",
-          "synonyms": [
-            "DCB"
-          ]
+          "value": "data control block (DCB)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "data definition name",
-          "synonyms": [
-            "ddname"
-          ]
+          "value": "data definition name (ddname)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1881,10 +1966,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Data Facility Sort",
-          "synonyms": [
-            "DFSORT™"
-          ]
+          "value": "Data Facility Sort (DFSORT™)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1903,10 +1986,8 @@
         },
         {
           "type": "synonyms",
-          "value": "data link control",
-          "synonyms": [
-            "DLC"
-          ]
+          "value": "data link control (DLC)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1915,10 +1996,8 @@
         },
         {
           "type": "synonyms",
-          "value": "data link switching",
-          "synonyms": [
-            "DLSw"
-          ]
+          "value": "data link switching (DLSw)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1972,12 +2051,37 @@
         },
         {
           "type": "synonyms",
+          "value": "DBCS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "DBMS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "DC",
           "synonyms": []
         },
         {
           "type": "synonyms",
+          "value": "DCB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "DCLGEN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "DD card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ddname",
           "synonyms": []
         },
         {
@@ -1997,10 +2101,8 @@
         },
         {
           "type": "synonyms",
-          "value": "declarations generator",
-          "synonyms": [
-            "DCLGEN"
-          ]
+          "value": "declarations generator (DCLGEN)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2029,17 +2131,13 @@
         },
         {
           "type": "synonyms",
-          "value": "dependent LU requester",
-          "synonyms": [
-            "DLUR"
-          ]
+          "value": "dependent LU requester (DLUR)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "dependent LU server",
-          "synonyms": [
-            "DLUS"
-          ]
+          "value": "dependent LU server (DLUS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2073,10 +2171,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Device Support Facilities program",
-          "synonyms": [
-            "ICKDSF"
-          ]
+          "value": "Device Support Facilities program (ICKDSF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2120,10 +2216,8 @@
         },
         {
           "type": "synonyms",
-          "value": "direct access storage device",
-          "synonyms": [
-            "DASD"
-          ]
+          "value": "direct access storage device (DASD)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2132,10 +2226,8 @@
         },
         {
           "type": "synonyms",
-          "value": "direct memory access",
-          "synonyms": [
-            "DMA"
-          ]
+          "value": "direct memory access (DMA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2184,10 +2276,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Distributed Computing Environment",
-          "synonyms": [
-            "DCE"
-          ]
+          "value": "Distributed Computing Environment (DCE)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2196,10 +2286,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Distributed File Service",
-          "synonyms": [
-            "DFS"
-          ]
+          "value": "Distributed File Service (DFS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2208,10 +2296,8 @@
         },
         {
           "type": "synonyms",
-          "value": "distribution library",
-          "synonyms": [
-            "DLIB"
-          ]
+          "value": "distribution library (DLIB)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2220,7 +2306,37 @@
         },
         {
           "type": "synonyms",
+          "value": "DLIB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "DLL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "DLSw",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "DLU",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "DLUR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "DLUS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "DMA",
           "synonyms": []
         },
         {
@@ -2240,10 +2356,8 @@
         },
         {
           "type": "synonyms",
-          "value": "double-byte character set",
-          "synonyms": [
-            "DBCS"
-          ]
+          "value": "double-byte character set (DBCS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2292,15 +2406,18 @@
         },
         {
           "type": "synonyms",
+          "value": "DVIPA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "dynamic allocation",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "dynamic link library",
-          "synonyms": [
-            "DLL"
-          ]
+          "value": "dynamic link library (DLL)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2314,10 +2431,8 @@
         },
         {
           "type": "synonyms",
-          "value": "dynamic VIPA",
-          "synonyms": [
-            "DVIPA"
-          ]
+          "value": "dynamic VIPA (DVIPA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2332,6 +2447,16 @@
         {
           "type": "synonyms",
           "value": "EB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "EBCDIC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "EBN",
           "synonyms": []
         },
         {
@@ -2351,15 +2476,18 @@
         },
         {
           "type": "synonyms",
+          "value": "EDT",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "element",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "eligible device table",
-          "synonyms": [
-            "EDT"
-          ]
+          "value": "eligible device table (EDT)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2403,10 +2531,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Enterprise Systems Connection",
-          "synonyms": [
-            "ESCON"
-          ]
+          "value": "Enterprise Systems Connection (ESCON)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2445,29 +2571,28 @@
         },
         {
           "type": "synonyms",
+          "value": "ESCON",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "ESCON channel",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "ESCON Director",
-          "synonyms": [
-            "ESCD"
-          ]
+          "value": "ESCON Director (ESCD)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "ESCON Manager",
-          "synonyms": [
-            "ESCM"
-          ]
+          "value": "ESCON Manager (ESCM)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "ESCON multiple image facility",
-          "synonyms": [
-            "EMIF"
-          ]
+          "value": "ESCON multiple image facility (EMIF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2477,6 +2602,11 @@
         {
           "type": "synonyms",
           "value": "Ethernet",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ETR",
           "synonyms": []
         },
         {
@@ -2511,17 +2641,13 @@
         },
         {
           "type": "synonyms",
-          "value": "Extended Binary-Coded Decimal Interchange Code",
-          "synonyms": [
-            "EBCDIC"
-          ]
+          "value": "Extended Binary-Coded Decimal Interchange Code (EBCDIC)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "extended border node",
-          "synonyms": [
-            "EBN"
-          ]
+          "value": "extended border node (EBN)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2530,10 +2656,8 @@
         },
         {
           "type": "synonyms",
-          "value": "extended remote copy",
-          "synonyms": [
-            "XRC"
-          ]
+          "value": "extended remote copy (XRC)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2542,10 +2666,8 @@
         },
         {
           "type": "synonyms",
-          "value": "External Time Reference",
-          "synonyms": [
-            "ETR"
-          ]
+          "value": "External Time Reference (ETR)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2589,10 +2711,13 @@
         },
         {
           "type": "synonyms",
-          "value": "Fiber Connection Environment",
-          "synonyms": [
-            "FICON®"
-          ]
+          "value": "FFST",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Fiber Connection Environment (FICON®)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2611,10 +2736,13 @@
         },
         {
           "type": "synonyms",
-          "value": "fibre-channel connection",
-          "synonyms": [
-            "FICON"
-          ]
+          "value": "fibre-channel connection (FICON)",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "FICON",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2623,10 +2751,13 @@
         },
         {
           "type": "synonyms",
-          "value": "field-replaceable unit",
-          "synonyms": [
-            "FRU"
-          ]
+          "value": "field-replaceable unit (FRU)",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "FIFO",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2640,10 +2771,8 @@
         },
         {
           "type": "synonyms",
-          "value": "File Transfer Protocol",
-          "synonyms": [
-            "FTP"
-          ]
+          "value": "File Transfer Protocol (FTP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2657,17 +2786,13 @@
         },
         {
           "type": "synonyms",
-          "value": "First Failure Support Technology",
-          "synonyms": [
-            "FFST"
-          ]
+          "value": "First Failure Support Technology (FFST) dump",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "first-in-first-out",
-          "synonyms": [
-            "FIFO"
-          ]
+          "value": "first-in-first-out (FIFO)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2682,6 +2807,11 @@
         {
           "type": "synonyms",
           "value": "FlashCopy®",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "FMID",
           "synonyms": []
         },
         {
@@ -2711,7 +2841,7 @@
         },
         {
           "type": "synonyms",
-          "value": "format identification field (FID",
+          "value": "\"format identification field (FID, FID field)\"",
           "synonyms": []
         },
         {
@@ -2746,6 +2876,16 @@
         },
         {
           "type": "synonyms",
+          "value": "FRU",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "FTP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "FTPD",
           "synonyms": []
         },
@@ -2776,10 +2916,8 @@
         },
         {
           "type": "synonyms",
-          "value": "function modification identifier",
-          "synonyms": [
-            "FMID"
-          ]
+          "value": "function modification identifier (FMID)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2803,17 +2941,18 @@
         },
         {
           "type": "synonyms",
-          "value": "generalized trace facility",
-          "synonyms": [
-            "GTF"
-          ]
+          "value": "GDG",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "generation data group",
-          "synonyms": [
-            "GDG"
-          ]
+          "value": "generalized trace facility (GTF)",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "generation data group (GDG)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2822,10 +2961,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Geographically Dispersed Parallel Sysplex™",
-          "synonyms": [
-            "GDPS®"
-          ]
+          "value": "Geographically Dispersed Parallel Sysplex™ (GDPS®)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2874,6 +3011,11 @@
         },
         {
           "type": "synonyms",
+          "value": "GTF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "guest",
           "synonyms": []
         },
@@ -2904,21 +3046,27 @@
         },
         {
           "type": "synonyms",
-          "value": "hardware configuration definition",
-          "synonyms": [
-            "HCD"
-          ]
+          "value": "hardware configuration definition (HCD)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "Hardware Management Console",
-          "synonyms": [
-            "HMC"
-          ]
+          "value": "Hardware Management Console (HMC)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "hardware unit",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "HASP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "HCD",
           "synonyms": []
         },
         {
@@ -2938,17 +3086,18 @@
         },
         {
           "type": "synonyms",
-          "value": "hierarchical file system",
-          "synonyms": [
-            "HFS"
-          ]
+          "value": "HFS",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "high-level language",
-          "synonyms": [
-            "HLL"
-          ]
+          "value": "hierarchical file system (HFS) data set",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "high-level language (HLL)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -2958,6 +3107,16 @@
         {
           "type": "synonyms",
           "value": "HiperSockets™",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "HLL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "HMC",
           "synonyms": []
         },
         {
@@ -2987,10 +3146,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Houston Automatic Spooling Priority",
-          "synonyms": [
-            "HASP"
-          ]
+          "value": "Houston Automatic Spooling Priority (HASP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3034,10 +3191,13 @@
         },
         {
           "type": "synonyms",
-          "value": "IBM systems engineer",
-          "synonyms": [
-            "SE"
-          ]
+          "value": "IBM systems engineer (SE)",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ICMP",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3081,6 +3241,11 @@
         },
         {
           "type": "synonyms",
+          "value": "IMS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "IMS DB",
           "synonyms": []
         },
@@ -3096,17 +3261,13 @@
         },
         {
           "type": "synonyms",
-          "value": "Information Management System",
-          "synonyms": [
-            "IMS"
-          ]
+          "value": "Information Management System (IMS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "initial program load",
-          "synonyms": [
-            "IPL"
-          ]
+          "value": "initial program load (IPL)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3130,17 +3291,13 @@
         },
         {
           "type": "synonyms",
-          "value": "input/output configuration data set",
-          "synonyms": [
-            "IOCDS"
-          ]
+          "value": "input/output configuration data set (IOCDS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "input/output definition file",
-          "synonyms": [
-            "IODF"
-          ]
+          "value": "input/output definition file (IODF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3159,10 +3316,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Integrated Services Digital Network",
-          "synonyms": [
-            "ISDN"
-          ]
+          "value": "Integrated Services Digital Network (ISDN)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3171,17 +3326,13 @@
         },
         {
           "type": "synonyms",
-          "value": "interactive problem control system",
-          "synonyms": [
-            "IPCS"
-          ]
+          "value": "interactive problem control system (IPCS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "Interactive System Productivity Facility",
-          "synonyms": [
-            "ISPF"
-          ]
+          "value": "Interactive System Productivity Facility (ISPF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3200,17 +3351,13 @@
         },
         {
           "type": "synonyms",
-          "value": "Internet Control Message Protocol",
-          "synonyms": [
-            "ICMP"
-          ]
+          "value": "Internet Control Message Protocol (ICMP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "Internet Protocol",
-          "synonyms": [
-            "IP"
-          ]
+          "value": "Internet Protocol (IP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3239,6 +3386,11 @@
         },
         {
           "type": "synonyms",
+          "value": "IOCDS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "I/O cluster",
           "synonyms": []
         },
@@ -3254,7 +3406,17 @@
         },
         {
           "type": "synonyms",
+          "value": "IODF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "IOP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "IP",
           "synonyms": []
         },
         {
@@ -3265,6 +3427,16 @@
         {
           "type": "synonyms",
           "value": "IP address",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "IPCS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "IPL",
           "synonyms": []
         },
         {
@@ -3314,7 +3486,17 @@
         },
         {
           "type": "synonyms",
+          "value": "ISDN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "ISMF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ISPF",
           "synonyms": []
         },
         {
@@ -3330,6 +3512,16 @@
         {
           "type": "synonyms",
           "value": "IVP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "JCL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "JES",
           "synonyms": []
         },
         {
@@ -3354,17 +3546,18 @@
         },
         {
           "type": "synonyms",
-          "value": "job control language",
-          "synonyms": [
-            "JCL"
-          ]
+          "value": "job control language (JCL)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "job entry subsystem",
-          "synonyms": [
-            "JES"
-          ]
+          "value": "job control language (JCL) statements",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "job entry subsystem (JES)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3413,14 +3606,22 @@
         },
         {
           "type": "synonyms",
-          "value": "key-sequenced data set",
-          "synonyms": [
-            "KSDS"
-          ]
+          "value": "key-sequenced data set (KSDS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "keyword",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "KSDS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LAN",
           "synonyms": []
         },
         {
@@ -3435,10 +3636,23 @@
         },
         {
           "type": "synonyms",
-          "value": "last-in-first-out",
-          "synonyms": [
-            "LIFO"
-          ]
+          "value": "last-in-first-out (LIFO)",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LCSS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LCU",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LDAP",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3452,10 +3666,13 @@
         },
         {
           "type": "synonyms",
-          "value": "licensed internal code",
-          "synonyms": [
-            "LIC"
-          ]
+          "value": "LIC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "licensed internal code (LIC)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3464,10 +3681,13 @@
         },
         {
           "type": "synonyms",
-          "value": "Lightweight Directory Access Protocol",
-          "synonyms": [
-            "LDAP"
-          ]
+          "value": "LIFO",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lightweight Directory Access Protocol (LDAP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3506,10 +3726,8 @@
         },
         {
           "type": "synonyms",
-          "value": "link pack area",
-          "synonyms": [
-            "LPA"
-          ]
+          "value": "link pack area (LPA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3553,17 +3771,13 @@
         },
         {
           "type": "synonyms",
-          "value": "local area network",
-          "synonyms": [
-            "LAN"
-          ]
+          "value": "local area network (LAN)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "local system queue area",
-          "synonyms": [
-            "LSQA"
-          ]
+          "value": "local system queue area (LSQA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3582,35 +3796,27 @@
         },
         {
           "type": "synonyms",
-          "value": "logical channel subsystem",
-          "synonyms": [
-            "LCSS"
-          ]
+          "value": "logical channel subsystem (LCSS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "logical control unit",
-          "synonyms": [
-            "LCU"
-          ]
+          "value": "logical control unit (LCU)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "logically partitioned",
-          "synonyms": [
-            "LPAR"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "logical partition",
-          "synonyms": [
-            "LPAR"
-          ]
+          "value": "logically partitioned (LPAR) mode",
+          "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "logical partitioning",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "logical partition (LPAR)",
           "synonyms": []
         },
         {
@@ -3620,10 +3826,8 @@
         },
         {
           "type": "synonyms",
-          "value": "logical unit",
-          "synonyms": [
-            "LU"
-          ]
+          "value": "logical unit (LU)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3657,14 +3861,22 @@
         },
         {
           "type": "synonyms",
-          "value": "low entry networking",
-          "synonyms": [
-            "LEN"
-          ]
+          "value": "low entry networking (LEN) node",
+          "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "LP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LPA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LPAR",
           "synonyms": []
         },
         {
@@ -3679,7 +3891,22 @@
         },
         {
           "type": "synonyms",
+          "value": "LSQA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LU",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "LU-LU session",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MAC",
           "synonyms": []
         },
         {
@@ -3754,6 +3981,11 @@
         },
         {
           "type": "synonyms",
+          "value": "MCS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "MCS console",
           "synonyms": []
         },
@@ -3764,17 +3996,13 @@
         },
         {
           "type": "synonyms",
-          "value": "media access control",
-          "synonyms": [
-            "MAC"
-          ]
+          "value": "media access control (MAC)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "megabyte",
-          "synonyms": [
-            "MB"
-          ]
+          "value": "megabyte (MB)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3788,10 +4016,8 @@
         },
         {
           "type": "synonyms",
-          "value": "message processing facility",
-          "synonyms": [
-            "MPF"
-          ]
+          "value": "message processing facility (MPF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3805,15 +4031,8 @@
         },
         {
           "type": "synonyms",
-          "value": "method",
+          "value": "metropolitan area network (MAN)",
           "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "metropolitan area network",
-          "synonyms": [
-            "MAN"
-          ]
         },
         {
           "type": "synonyms",
@@ -3823,6 +4042,11 @@
         {
           "type": "synonyms",
           "value": "microprocessor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MIF",
           "synonyms": []
         },
         {
@@ -3857,17 +4081,13 @@
         },
         {
           "type": "synonyms",
-          "value": "modem",
-          "synonyms": [
-            "modulator-demodulator"
-          ]
+          "value": "modem (modulator-demodulator)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "modification control statement",
-          "synonyms": [
-            "MCS"
-          ]
+          "value": "modification control statement (MCS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3881,10 +4101,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Monitor I",
-          "synonyms": [
-            "null"
-          ]
+          "value": "\"Monitor I, II, III\"",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3918,24 +4136,18 @@
         },
         {
           "type": "synonyms",
-          "value": "multiple console support",
-          "synonyms": [
-            "MCS"
-          ]
+          "value": "multiple console support (MCS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "multiple image facility",
-          "synonyms": [
-            "MIF"
-          ]
+          "value": "multiple image facility (MIF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "Multiple Virtual Storage",
-          "synonyms": [
-            "MVS"
-          ]
+          "value": "Multiple Virtual Storage (MVS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3949,10 +4161,8 @@
         },
         {
           "type": "synonyms",
-          "value": "multiprocessor",
-          "synonyms": [
-            "MP"
-          ]
+          "value": "multiprocessor (MP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -3986,6 +4196,11 @@
         },
         {
           "type": "synonyms",
+          "value": "MVS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "MVS/ESA",
           "synonyms": []
         },
@@ -3996,10 +4211,13 @@
         },
         {
           "type": "synonyms",
-          "value": "nanosecond",
-          "synonyms": [
-            "ns"
-          ]
+          "value": "nanosecond (ns)",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "NAU",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4013,10 +4231,8 @@
         },
         {
           "type": "synonyms",
-          "value": "network accessible unit",
-          "synonyms": [
-            "NAU"
-          ]
+          "value": "network accessible unit (NAU)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4045,17 +4261,13 @@
         },
         {
           "type": "synonyms",
-          "value": "network interface card",
-          "synonyms": [
-            "NIC"
-          ]
+          "value": "network interface card (NIC)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "network job entry",
-          "synonyms": [
-            "NJE"
-          ]
+          "value": "network job entry (NJE)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4064,10 +4276,8 @@
         },
         {
           "type": "synonyms",
-          "value": "network node",
-          "synonyms": [
-            "NN"
-          ]
+          "value": "network node (NN)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4111,7 +4321,22 @@
         },
         {
           "type": "synonyms",
+          "value": "NIC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "NIP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "NLP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "NN",
           "synonyms": []
         },
         {
@@ -4141,10 +4366,13 @@
         },
         {
           "type": "synonyms",
-          "value": "nucleus initialization program",
-          "synonyms": [
-            "NIP"
-          ]
+          "value": "nucleus initialization program (NIP)",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "null",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4193,10 +4421,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Open Shortest Path First",
-          "synonyms": [
-            "OSPF"
-          ]
+          "value": "Open Shortest Path First (OSPF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4205,17 +4431,13 @@
         },
         {
           "type": "synonyms",
-          "value": "Open Systems Adapter",
-          "synonyms": [
-            "OSA"
-          ]
+          "value": "Open Systems Adapter (OSA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "Open Systems Interconnection",
-          "synonyms": [
-            "OSI"
-          ]
+          "value": "Open Systems Interconnection (OSI)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4249,12 +4471,27 @@
         },
         {
           "type": "synonyms",
+          "value": "OSA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "oscillator",
           "synonyms": []
         },
         {
           "type": "synonyms",
+          "value": "OSI",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "OSN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "OSPF",
           "synonyms": []
         },
         {
@@ -4359,17 +4596,13 @@
         },
         {
           "type": "synonyms",
-          "value": "partitioned data set",
-          "synonyms": [
-            "PDS"
-          ]
+          "value": "partitioned data set extended (PDSE)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "partitioned data set extended",
-          "synonyms": [
-            "PDSE"
-          ]
+          "value": "partitioned data set (PDS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4393,14 +4626,17 @@
         },
         {
           "type": "synonyms",
-          "value": "path information unit",
-          "synonyms": [
-            "PIU"
-          ]
+          "value": "path information unit (PIU)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "PC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PCHID",
           "synonyms": []
         },
         {
@@ -4420,10 +4656,8 @@
         },
         {
           "type": "synonyms",
-          "value": "peer-to-peer remote copy",
-          "synonyms": [
-            "PPRC"
-          ]
+          "value": "peer-to-peer remote copy (PPRC)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4467,22 +4701,23 @@
         },
         {
           "type": "synonyms",
+          "value": "PFK",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "PFK capability",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "physical channel ID",
-          "synonyms": [
-            "PCHID"
-          ]
+          "value": "physical channel identifier (PCHID)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "physical channel identifier",
-          "synonyms": [
-            "PCHID"
-          ]
+          "value": "physical channel ID (PCHID)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4491,10 +4726,8 @@
         },
         {
           "type": "synonyms",
-          "value": "physically partitioned",
-          "synonyms": [
-            "PP"
-          ]
+          "value": "physically partitioned (PP) mode",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4503,14 +4736,17 @@
         },
         {
           "type": "synonyms",
-          "value": "physical unit",
-          "synonyms": [
-            "PU"
-          ]
+          "value": "physical unit (PU)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "PIN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PIU",
           "synonyms": []
         },
         {
@@ -4570,10 +4806,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Portable Operating System Interface",
-          "synonyms": [
-            "POSIX"
-          ]
+          "value": "Portable Operating System Interface (POSIX)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4587,7 +4821,17 @@
         },
         {
           "type": "synonyms",
+          "value": "POSIX",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "power-on reset",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PPRC",
           "synonyms": []
         },
         {
@@ -4607,10 +4851,8 @@
         },
         {
           "type": "synonyms",
-          "value": "preventive service planning",
-          "synonyms": [
-            "PSP"
-          ]
+          "value": "preventive service planning (PSP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4644,10 +4886,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Processor Resource/Systems Manager™",
-          "synonyms": [
-            "PR/SM"
-          ]
+          "value": "Processor Resource/Systems Manager™ (PR/SM)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4666,10 +4906,8 @@
         },
         {
           "type": "synonyms",
-          "value": "program error PTF",
-          "synonyms": [
-            "PE-PTF"
-          ]
+          "value": "program error PTF (PE-PTF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4678,10 +4916,8 @@
         },
         {
           "type": "synonyms",
-          "value": "program function key",
-          "synonyms": [
-            "PFK"
-          ]
+          "value": "program function key (PFK)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4725,17 +4961,13 @@
         },
         {
           "type": "synonyms",
-          "value": "program status word",
-          "synonyms": [
-            "PSW"
-          ]
+          "value": "program status word (PSW)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "program temporary fix",
-          "synonyms": [
-            "PTF"
-          ]
+          "value": "program temporary fix (PTF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4759,12 +4991,42 @@
         },
         {
           "type": "synonyms",
+          "value": "PSP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "PSS",
           "synonyms": []
         },
         {
           "type": "synonyms",
+          "value": "PSW",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PTF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PU",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "PUT",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "QDIO",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "QSAM",
           "synonyms": []
         },
         {
@@ -4784,17 +5046,18 @@
         },
         {
           "type": "synonyms",
-          "value": "queued direct I/O",
-          "synonyms": [
-            "QDIO"
-          ]
+          "value": "queued direct I/O (QDIO)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "queued sequential access method",
-          "synonyms": [
-            "QSAM"
-          ]
+          "value": "queued sequential access method (QSAM)",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "RACF",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4898,10 +5161,8 @@
         },
         {
           "type": "synonyms",
-          "value": "redundant array of independent disk",
-          "synonyms": [
-            "RAID"
-          ]
+          "value": "redundant array of independent disk (RAID)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4925,17 +5186,13 @@
         },
         {
           "type": "synonyms",
-          "value": "register save area",
-          "synonyms": [
-            "RSA"
-          ]
+          "value": "register save area (RSA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "related installation materials",
-          "synonyms": [
-            "RIMs"
-          ]
+          "value": "related installation materials (RIMs)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4954,10 +5211,8 @@
         },
         {
           "type": "synonyms",
-          "value": "remote job entry",
-          "synonyms": [
-            "RJE"
-          ]
+          "value": "remote job entry (RJE)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4966,24 +5221,18 @@
         },
         {
           "type": "synonyms",
-          "value": "request for comment",
-          "synonyms": [
-            "RFC"
-          ]
+          "value": "request for comment (RFC)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "request header",
-          "synonyms": [
-            "RH"
-          ]
+          "value": "request header (RH)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "request unit",
-          "synonyms": [
-            "RU"
-          ]
+          "value": "request unit (RU)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -4992,10 +5241,8 @@
         },
         {
           "type": "synonyms",
-          "value": "residency mode",
-          "synonyms": [
-            "RMODE"
-          ]
+          "value": "residency mode (RMODE)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5004,31 +5251,23 @@
         },
         {
           "type": "synonyms",
-          "value": "Resource Access Control Facility",
-          "synonyms": [
-            "RACF"
-          ]
+          "value": "Resource Access Control Facility (RACF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "Resource Management Facility",
-          "synonyms": [
-            "RMF"
-          ]
+          "value": "Resource Management Facility (RMF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "resource recovery services",
-          "synonyms": [
-            "RRS"
-          ]
+          "value": "resource recovery services (RRS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "response unit",
-          "synonyms": [
-            "RU"
-          ]
+          "value": "response unit (RU)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5042,10 +5281,8 @@
         },
         {
           "type": "synonyms",
-          "value": "restructured extended executor",
-          "synonyms": [
-            "REXX"
-          ]
+          "value": "restructured extended executor (REXX)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5069,7 +5306,37 @@
         },
         {
           "type": "synonyms",
+          "value": "RFC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "RH",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "RIM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "RIP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "RJE",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "RMF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "RMODE",
           "synonyms": []
         },
         {
@@ -5084,10 +5351,8 @@
         },
         {
           "type": "synonyms",
-          "value": "route selection services",
-          "synonyms": [
-            "RSS"
-          ]
+          "value": "route selection services (RSS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5106,10 +5371,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Routing Information Protocol",
-          "synonyms": [
-            "RIP"
-          ]
+          "value": "Routing Information Protocol (RIP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5124,6 +5387,11 @@
         {
           "type": "synonyms",
           "value": "RRI",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "RSA",
           "synonyms": []
         },
         {
@@ -5148,6 +5416,11 @@
         },
         {
           "type": "synonyms",
+          "value": "RU",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "run",
           "synonyms": []
         },
@@ -5159,6 +5432,16 @@
         {
           "type": "synonyms",
           "value": "runtime environment",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SAF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SAP",
           "synonyms": []
         },
         {
@@ -5183,15 +5466,28 @@
         },
         {
           "type": "synonyms",
+          "value": "SDLC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SDSF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "SDUMP macro",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "Secure Sockets Layer",
-          "synonyms": [
-            "SSL"
-          ]
+          "value": "SE",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Secure Sockets Layer (SSL)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5235,10 +5531,8 @@
         },
         {
           "type": "synonyms",
-          "value": "service access point",
-          "synonyms": [
-            "SAP"
-          ]
+          "value": "service access point (SAP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5247,10 +5541,8 @@
         },
         {
           "type": "synonyms",
-          "value": "service level agreement",
-          "synonyms": [
-            "SLA"
-          ]
+          "value": "service level agreement (SLA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5264,10 +5556,8 @@
         },
         {
           "type": "synonyms",
-          "value": "service request block",
-          "synonyms": [
-            "SRB"
-          ]
+          "value": "service request block (SRB)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5326,17 +5616,13 @@
         },
         {
           "type": "synonyms",
-          "value": "simultaneous peripheral operations online",
-          "synonyms": [
-            "spool"
-          ]
+          "value": "simultaneous peripheral operations online (spool)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "single-image",
-          "synonyms": [
-            "SI"
-          ]
+          "value": "single-image (SI) mode",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5360,19 +5646,37 @@
         },
         {
           "type": "synonyms",
+          "value": "SLA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "SLU",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "small computer system interface",
-          "synonyms": [
-            "SCSI"
-          ]
+          "value": "small computer system interface (SCSI)",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SMF",
+          "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "SMPCSI",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SMP/E",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SMS",
           "synonyms": []
         },
         {
@@ -5382,14 +5686,22 @@
         },
         {
           "type": "synonyms",
-          "value": "SNA network interconnection",
-          "synonyms": [
-            "SNI"
-          ]
+          "value": "SNA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SNA network interconnection (SNI)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "SNASw",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SNI",
           "synonyms": []
         },
         {
@@ -5434,6 +5746,11 @@
         },
         {
           "type": "synonyms",
+          "value": "spool",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "spooled data set",
           "synonyms": []
         },
@@ -5445,6 +5762,11 @@
         {
           "type": "synonyms",
           "value": "SPUFI",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SQA",
           "synonyms": []
         },
         {
@@ -5465,6 +5787,11 @@
         {
           "type": "synonyms",
           "value": "SSCH",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SSCP",
           "synonyms": []
         },
         {
@@ -5495,6 +5822,11 @@
         {
           "type": "synonyms",
           "value": "SSID",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SSL",
           "synonyms": []
         },
         {
@@ -5564,10 +5896,8 @@
         },
         {
           "type": "synonyms",
-          "value": "storage management subsystem",
-          "synonyms": [
-            "SMS"
-          ]
+          "value": "storage management subsystem (SMS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5621,10 +5951,8 @@
         },
         {
           "type": "synonyms",
-          "value": "subsystem interface",
-          "synonyms": [
-            "SSI"
-          ]
+          "value": "subsystem interface (SSI)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5648,21 +5976,22 @@
         },
         {
           "type": "synonyms",
-          "value": "supervisor call",
-          "synonyms": [
-            "SVC"
-          ]
+          "value": "supervisor call (SVC)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "support element",
-          "synonyms": [
-            "SE"
-          ]
+          "value": "support element (SE)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "suspended state",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SVC",
           "synonyms": []
         },
         {
@@ -5702,10 +6031,8 @@
         },
         {
           "type": "synonyms",
-          "value": "switched multimegabit data service",
-          "synonyms": [
-            "SMDS"
-          ]
+          "value": "switched multimegabit data service (SMDS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5714,10 +6041,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Synchronous Data Link Control",
-          "synonyms": [
-            "SDLC"
-          ]
+          "value": "Synchronous Data Link Control (SDLC)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5752,6 +6077,11 @@
         {
           "type": "synonyms",
           "value": "SYSLOG",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SYSMOD",
           "synonyms": []
         },
         {
@@ -5801,10 +6131,8 @@
         },
         {
           "type": "synonyms",
-          "value": "system authorization facility",
-          "synonyms": [
-            "SAF"
-          ]
+          "value": "system authorization facility (SAF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5818,10 +6146,8 @@
         },
         {
           "type": "synonyms",
-          "value": "system control element",
-          "synonyms": [
-            "SCE"
-          ]
+          "value": "system control element (SCE)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5830,10 +6156,8 @@
         },
         {
           "type": "synonyms",
-          "value": "System Display and Search Facility",
-          "synonyms": [
-            "SDSF"
-          ]
+          "value": "System Display and Search Facility (SDSF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5852,24 +6176,18 @@
         },
         {
           "type": "synonyms",
-          "value": "system management facilities",
-          "synonyms": [
-            "SMF"
-          ]
+          "value": "system management facilities (SMF)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "system modification",
-          "synonyms": [
-            "SYSMOD"
-          ]
+          "value": "System Modification Program Extended (SMP/E)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "System Modification Program Extended",
-          "synonyms": [
-            "SMP/E"
-          ]
+          "value": "system modification (SYSMOD)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5883,24 +6201,18 @@
         },
         {
           "type": "synonyms",
-          "value": "system queue area",
-          "synonyms": [
-            "SQA"
-          ]
+          "value": "system queue area (SQA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "system services control point",
-          "synonyms": [
-            "SSCP"
-          ]
+          "value": "system services control point (SSCP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "Systems Network Architecture",
-          "synonyms": [
-            "SNA"
-          ]
+          "value": "Systems Network Architecture (SNA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5949,10 +6261,8 @@
         },
         {
           "type": "synonyms",
-          "value": "task control block",
-          "synonyms": [
-            "TCB"
-          ]
+          "value": "task control block (TCB)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -5961,7 +6271,32 @@
         },
         {
           "type": "synonyms",
+          "value": "TCB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "TCO",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "TCP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "TCP/IP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "TDM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "TDU",
           "synonyms": []
         },
         {
@@ -5991,10 +6326,13 @@
         },
         {
           "type": "synonyms",
-          "value": "terminal owning region",
-          "synonyms": [
-            "TOR"
-          ]
+          "value": "terminal owning region (TOR)",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "TG",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6008,10 +6346,13 @@
         },
         {
           "type": "synonyms",
-          "value": "third generation language",
-          "synonyms": [
-            "3GL"
-          ]
+          "value": "TH",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "third generation language (3GL)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6040,14 +6381,17 @@
         },
         {
           "type": "synonyms",
-          "value": "Time Sharing Option/Extensions",
-          "synonyms": [
-            "TSO/E"
-          ]
+          "value": "Time Sharing Option/Extensions (TSO/E)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "TLIB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "TLS",
           "synonyms": []
         },
         {
@@ -6067,10 +6411,8 @@
         },
         {
           "type": "synonyms",
-          "value": "topology database update",
-          "synonyms": [
-            "TDU"
-          ]
+          "value": "topology database update (TDU)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6079,10 +6421,8 @@
         },
         {
           "type": "synonyms",
-          "value": "total cost of ownership",
-          "synonyms": [
-            "TCO"
-          ]
+          "value": "total cost of ownership (TCO)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6111,31 +6451,23 @@
         },
         {
           "type": "synonyms",
-          "value": "Transmission Control Protocol",
-          "synonyms": [
-            "TCP"
-          ]
+          "value": "Transmission Control Protocol/Internet Protocol (TCP/IP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "Transmission Control Protocol/Internet Protocol",
-          "synonyms": [
-            "TCP/IP"
-          ]
+          "value": "Transmission Control Protocol (TCP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "transmission group",
-          "synonyms": [
-            "TG"
-          ]
+          "value": "transmission group (TG)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "transmission header",
-          "synonyms": [
-            "TH"
-          ]
+          "value": "transmission header (TH)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6154,10 +6486,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Transport Layer Security",
-          "synonyms": [
-            "TLS"
-          ]
+          "value": "Transport Layer Security (TLS)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6196,6 +6526,11 @@
         },
         {
           "type": "synonyms",
+          "value": "TSO/E",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "TSR",
           "synonyms": []
         },
@@ -6216,6 +6551,11 @@
         },
         {
           "type": "synonyms",
+          "value": "UDP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "UID",
           "synonyms": []
         },
@@ -6231,17 +6571,13 @@
         },
         {
           "type": "synonyms",
-          "value": "uniprocessor",
-          "synonyms": [
-            "UP"
-          ]
+          "value": "uniprocessor (UP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "unit of recovery",
-          "synonyms": [
-            "UR"
-          ]
+          "value": "unit of recovery (UR)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6290,10 +6626,8 @@
         },
         {
           "type": "synonyms",
-          "value": "User Datagram Protocol",
-          "synonyms": [
-            "UDP"
-          ]
+          "value": "User Datagram Protocol (UDP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6302,17 +6636,23 @@
         },
         {
           "type": "synonyms",
-          "value": "user identification",
-          "synonyms": [
-            "user ID"
-          ]
+          "value": "user ID",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "user modification",
-          "synonyms": [
-            "USERMOD"
-          ]
+          "value": "user identification (user ID)",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "USERMOD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "user modification (USERMOD)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6341,36 +6681,38 @@
         },
         {
           "type": "synonyms",
+          "value": "VIO",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "VIPA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "virtual address space",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "virtual input/output",
-          "synonyms": [
-            "VIO"
-          ]
+          "value": "virtual input/output (VIO)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "virtual IP address",
-          "synonyms": [
-            "VIPA"
-          ]
+          "value": "virtual IP address (VIPA)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "virtual private network",
-          "synonyms": [
-            "VPN"
-          ]
+          "value": "virtual private network (VPN)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "virtual route",
-          "synonyms": [
-            "VR"
-          ]
+          "value": "virtual route (VR)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6379,17 +6721,13 @@
         },
         {
           "type": "synonyms",
-          "value": "virtual storage access method",
-          "synonyms": [
-            "VSAM"
-          ]
+          "value": "virtual storage access method (VSAM)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "virtual telecommunications access method",
-          "synonyms": [
-            "VTAM"
-          ]
+          "value": "virtual telecommunications access method (VTAM)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6428,10 +6766,18 @@
         },
         {
           "type": "synonyms",
-          "value": "volume table of contents",
-          "synonyms": [
-            "VTOC"
-          ]
+          "value": "volume table of contents (VTOC)",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "VPN",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "VR",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6441,6 +6787,21 @@
         {
           "type": "synonyms",
           "value": "V=R region",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "VSAM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "VTAM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "VTOC",
           "synonyms": []
         },
         {
@@ -6456,6 +6817,11 @@
         {
           "type": "synonyms",
           "value": "wait state",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "WAN",
           "synonyms": []
         },
         {
@@ -6490,10 +6856,8 @@
         },
         {
           "type": "synonyms",
-          "value": "wide area network",
-          "synonyms": [
-            "WAN"
-          ]
+          "value": "wide area network (WAN)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6507,15 +6871,18 @@
         },
         {
           "type": "synonyms",
+          "value": "WLM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "workload",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "workload management",
-          "synonyms": [
-            "WLM"
-          ]
+          "value": "workload management (WLM)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6529,21 +6896,27 @@
         },
         {
           "type": "synonyms",
-          "value": "write-to-operator",
-          "synonyms": [
-            "WTO"
-          ]
+          "value": "write-to-operator-with-reply (WTOR) message",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "write-to-operator-with-reply",
-          "synonyms": [
-            "WTOR"
-          ]
+          "value": "write-to-operator (WTO) message",
+          "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "WSF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "WTO",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "WTOR",
           "synonyms": []
         },
         {
@@ -6558,12 +6931,27 @@
         },
         {
           "type": "synonyms",
+          "value": "XCF",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "XID",
           "synonyms": []
         },
         {
           "type": "synonyms",
+          "value": "zAAP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "z/Architecture",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "zFS",
           "synonyms": []
         },
         {
@@ -6578,10 +6966,8 @@
         },
         {
           "type": "synonyms",
-          "value": "z/OS UNIX System Services",
-          "synonyms": [
-            "z/OS UNIX"
-          ]
+          "value": "z/OS UNIX System Services (z/OS UNIX)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -6590,17 +6976,13 @@
         },
         {
           "type": "synonyms",
-          "value": "zSeries Application Assist Processor",
-          "synonyms": [
-            "zAAP"
-          ]
+          "value": "zSeries Application Assist Processor (zAAP)",
+          "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "zSeries File System",
-          "synonyms": [
-            "zFS"
-          ]
+          "value": "zSeries File System (zFS)",
+          "synonyms": []
         }
       ],
       "fuzzy_match": true
@@ -6648,18 +7030,18 @@
       },
       "conditions": "anything_else",
       "dialog_node": "Anything else",
-      "previous_sibling": "node_1_1604794826707",
+      "previous_sibling": "node_5_1605485062285",
       "disambiguation_opt_out": true
     },
     {
       "type": "standard",
-      "title": "get word",
+      "title": "yes",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "What word were you asking about?"
+                "text": "Great! Glad I could help!"
               }
             ],
             "response_type": "text",
@@ -6667,84 +7049,74 @@
           }
         ]
       },
-      "context": {},
-      "conditions": "#request_def",
-      "digress_in": "does_not_return",
-      "dialog_node": "node_1_1603828733853",
-      "previous_sibling": "node_5_1603827731368"
+      "parent": "node_6_1605208375902",
+      "conditions": "#yes",
+      "dialog_node": "node_10_1605217566599"
     },
     {
       "type": "standard",
-      "title": "query term path 2",
-      "output": {},
-      "parent": "node_9_1603828977728",
-      "actions": [
-        {
-          "name": "main_webhook",
-          "type": "webhook",
-          "parameters": {
-            "hook": "findByTerm",
-            "term": "<? $wordIn ?>"
-          },
-          "result_variable": "webhook_termX"
-        }
-      ],
-      "metadata": {
-        "_customization": {
-          "mcr": true
-        }
-      },
-      "next_step": {
-        "behavior": "skip_user_input"
-      },
-      "conditions": "$wordIn",
-      "dialog_node": "node_1_1603839905851"
-    },
-    {
-      "type": "standard",
-      "title": "word from user - copy1",
-      "output": {
-        "generic": []
-      },
-      "context": {
-        "wordIn": "<? @word.literal ?>"
-      },
-      "next_step": {
-        "behavior": "skip_user_input"
-      },
-      "conditions": "@word",
-      "digress_in": "does_not_return",
-      "dialog_node": "node_1_1604794826707",
-      "previous_sibling": "node_1_1603828733853"
-    },
-    {
-      "type": "standard",
-      "title": "return definition",
+      "title": "User Feedback",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Here's what I found: "
-              },
-              {
-                "text": "<? $webhook_termX.defined ?>"
+                "text": "Thanks for the feedback! I've saved it for review!"
               }
             ],
             "response_type": "text",
-            "selection_policy": "multiline"
+            "selection_policy": "sequential"
           }
         ]
       },
-      "parent": "node_1_1603839905851",
-      "conditions": "$webhook_termX",
-      "dialog_node": "node_2_1603839905852"
+      "parent": "node_9_1605217801126",
+      "context": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_10_1605217801126"
     },
     {
       "type": "standard",
-      "title": "query term path 3",
+      "title": "no ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "That's okay, sorry I couldn't assist better. I am always training to provide improved responses. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1605217801126",
+      "conditions": "#no",
+      "dialog_node": "node_11_1605217801126",
+      "previous_sibling": "node_9_1605217801126"
+    },
+    {
+      "type": "standard",
+      "title": "Requesting Help/Definition",
+      "output": {
+        "generic": []
+      },
+      "context": {
+        "wordIn": "<? @word.value?>"
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#request_def || @word",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1603828733853",
+      "previous_sibling": "node_6_1602469644551"
+    },
+    {
+      "type": "standard",
+      "title": "query term - provided",
       "output": {},
-      "parent": "node_1_1604794826707",
+      "parent": "node_1_1603828733853",
       "actions": [
         {
           "name": "main_webhook",
@@ -6765,7 +7137,162 @@
         "behavior": "skip_user_input"
       },
       "conditions": "$wordIn",
-      "dialog_node": "node_2_1604794826709"
+      "dialog_node": "node_1_1605206123225"
+    },
+    {
+      "type": "standard",
+      "title": "General Greetings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello! How can I help you?"
+              },
+              {
+                "text": "Hi there! What can I help you with?"
+              },
+              {
+                "text": "Howdy! How can I help you?"
+              },
+              {
+                "text": "Hi there, what do you need to know?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#General_Greetings",
+      "dialog_node": "node_1_1605206630580",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "User Feedback",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for the feedback! I've saved it for review!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1605208994955",
+      "context": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_1_1605217028504"
+    },
+    {
+      "type": "standard",
+      "title": "no",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sorry about that. I'm still training and learning. Would you like to submit a better response you found or know?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": " Would you like to submit a better response you found or more information so I can improve?",
+            "options": [
+              {
+                "label": "yes",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "no",
+                "value": {
+                  "input": {
+                    "text": "no"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_6_1605208375902",
+      "conditions": "#no",
+      "dialog_node": "node_1_1605217368351",
+      "previous_sibling": "node_10_1605217566599"
+    },
+    {
+      "type": "standard",
+      "title": "still doesn't understand",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sorry- it doesn't seem like I know that yet. I'm still training and learning. Would you like to submit a better response you found or know and help me learn?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": " Would you like to submit a better response you found or more information so I can improve?",
+            "options": [
+              {
+                "label": "yes",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "no",
+                "value": {
+                  "input": {
+                    "text": "no"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1605484434325",
+      "conditions": "anything_else",
+      "dialog_node": "node_1_1605484577385"
+    },
+    {
+      "type": "standard",
+      "title": "yes ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Okay! Please share the answer you found!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1605484577385",
+      "conditions": "#yes",
+      "dialog_node": "node_2_1605484577386"
     },
     {
       "type": "standard",
@@ -6789,31 +7316,176 @@
     },
     {
       "type": "standard",
-      "title": "return definition",
+      "title": "yes",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Here what I know about <? $wordIn ?> :"
-              },
-              {
-                "text": "<? $webhook_termX.defined ?>"
+                "text": "Okay, please share any issues or suggestions you had with our chat, this will help me train or let my developers consider additional functionality. Thanks. "
               }
             ],
             "response_type": "text",
-            "selection_policy": "multiline"
+            "selection_policy": "sequential"
           }
         ]
       },
-      "parent": "node_2_1604794826709",
-      "conditions": "$webhook_termX",
-      "dialog_node": "node_3_1604794826709"
+      "parent": "node_7_1605208803387",
+      "conditions": "#yes",
+      "dialog_node": "node_3_1605208994955"
     },
     {
       "type": "standard",
-      "title": "query term",
-      "parent": "node_5_1603827731368",
+      "title": "yes ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Okay! Please share the answer you found!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1605217368351",
+      "conditions": "#yes",
+      "dialog_node": "node_3_1605217682996"
+    },
+    {
+      "type": "standard",
+      "title": "User Feedback",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for the response! I've saved it for review!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1605484577386",
+      "context": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_3_1605484577386"
+    },
+    {
+      "type": "standard",
+      "title": "read word from user ",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_5_1605208038588",
+      "context": {
+        "wordIn": "<? @word.value?>"
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@word",
+      "dialog_node": "node_4_1605208375901"
+    },
+    {
+      "type": "standard",
+      "title": "User Feedback",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for the response! I've saved it for review!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1605217682996",
+      "context": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_4_1605217682997"
+    },
+    {
+      "type": "standard",
+      "title": "doesn't know word",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I'm sorry, I'm not sure I know that yet, could you try again?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1605208038588",
+      "conditions": "anything_else",
+      "dialog_node": "node_4_1605484434325",
+      "previous_sibling": "node_4_1605208375901"
+    },
+    {
+      "type": "standard",
+      "title": "no ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "That's okay, sorry I couldn't assist better. I am always training to provide improved responses. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1605484577385",
+      "conditions": "#no",
+      "dialog_node": "node_4_1605484577386",
+      "previous_sibling": "node_2_1605484577386"
+    },
+    {
+      "type": "standard",
+      "title": "Ask for term",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What term were you confused about?"
+              },
+              {
+                "text": "What word did you need help with?"
+              },
+              {
+                "text": "Could you tell me which term is confusing?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1603828733853",
+      "conditions": "#request_def",
+      "dialog_node": "node_5_1605208038588",
+      "previous_sibling": "node_1_1605206123225"
+    },
+    {
+      "type": "standard",
+      "title": "query term - from user",
+      "output": {},
+      "parent": "node_4_1605208375901",
       "actions": [
         {
           "name": "main_webhook",
@@ -6834,50 +7506,77 @@
         "behavior": "skip_user_input"
       },
       "conditions": "$wordIn",
-      "dialog_node": "node_4_1603828171345"
+      "dialog_node": "node_5_1605208375902"
     },
     {
       "type": "standard",
-      "title": "Request def/mention word",
-      "output": {
-        "generic": []
-      },
-      "context": {
-        "wordIn": "<? @word ?>"
-      },
-      "next_step": {
-        "behavior": "skip_user_input"
-      },
-      "conditions": "#request_def && @word",
-      "dialog_node": "node_5_1603827731368",
-      "previous_sibling": "node_6_1602469644551"
-    },
-    {
-      "type": "standard",
-      "title": "return definition",
+      "title": "no ",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Here's what I found: "
-              },
-              {
-                "text": "<? $webhook_termX.defined ?>"
+                "text": "That's okay, sorry I couldn't assist better. I am always training to provide improved responses. "
               }
             ],
             "response_type": "text",
-            "selection_policy": "multiline"
+            "selection_policy": "sequential"
           }
         ]
       },
-      "parent": "node_4_1603828171345",
-      "conditions": "$webhook_termX",
-      "dialog_node": "node_5_1603834637225"
+      "parent": "node_1_1605217368351",
+      "conditions": "#no",
+      "dialog_node": "node_5_1605217749723",
+      "previous_sibling": "node_3_1605217682996"
     },
     {
       "type": "standard",
-      "title": "User needs help, bot offers assistance",
+      "title": "Posititive Responses",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks:)"
+              },
+              {
+                "text": "Thank You!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Would you like to submit a response as feedback?",
+            "options": [
+              {
+                "label": "yes",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "no",
+                "value": {
+                  "input": {
+                    "text": "no"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#General_Positive_Feedback",
+      "dialog_node": "node_5_1605485062285",
+      "previous_sibling": "node_7_1605208803387"
+    },
+    {
+      "type": "standard",
+      "title": "General Help/Confusion Expression",
       "output": {
         "generic": [
           {
@@ -6896,80 +7595,343 @@
       },
       "conditions": "#Help",
       "dialog_node": "node_6_1602469644551",
-      "previous_sibling": "Welcome"
+      "previous_sibling": "node_1_1605206630580"
     },
     {
       "type": "standard",
-      "title": "word from user",
+      "title": "return definition",
       "output": {
-        "generic": []
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here's what I found: "
+              },
+              {
+                "text": "<? $webhook_termX.defined ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Was this helpful?",
+            "options": [
+              {
+                "label": "yes",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "no",
+                "value": {
+                  "input": {
+                    "text": "no"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
       },
-      "parent": "node_1_1603828733853",
-      "context": {
-        "wordIn": "<? @word.literal ?>"
+      "parent": "node_5_1605208375902",
+      "conditions": "$webhook_termX",
+      "dialog_node": "node_6_1605208375902"
+    },
+    {
+      "type": "standard",
+      "title": "return definition ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here's what I found: "
+              },
+              {
+                "text": "<? $webhook_termX.defined ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Was this helpful?",
+            "options": [
+              {
+                "label": "yes",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "no",
+                "value": {
+                  "input": {
+                    "text": "no"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
       },
-      "next_step": {
-        "behavior": "skip_user_input"
+      "parent": "node_1_1605206123225",
+      "conditions": "$webhook_termX",
+      "dialog_node": "node_6_1605217801125"
+    },
+    {
+      "type": "standard",
+      "title": "yes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Okay, please share anything that went well, or suggestions you had to improve our chat. This will help me learn or let my developers consider additional functionality. Thanks!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
       },
-      "conditions": "@word",
-      "dialog_node": "node_9_1603828977728"
+      "parent": "node_5_1605485062285",
+      "conditions": "#yes",
+      "dialog_node": "node_6_1605485062286"
+    },
+    {
+      "type": "standard",
+      "title": "Negative Responses",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I'm sorry, I am actively training and will improve the more I'm utilized"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Would you like to submit feedback?",
+            "options": [
+              {
+                "label": "yes",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "no",
+                "value": {
+                  "input": {
+                    "text": "no"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#General_Negative_Feedback",
+      "dialog_node": "node_7_1605208803387",
+      "previous_sibling": "node_1_1603828733853"
+    },
+    {
+      "type": "standard",
+      "title": "yes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Great! Glad I could help!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1605217801125",
+      "conditions": "#yes",
+      "dialog_node": "node_7_1605217801126"
+    },
+    {
+      "type": "standard",
+      "title": "User Feedback",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for the feedback! I've saved it for review!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1605485062286",
+      "context": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_7_1605485062286"
+    },
+    {
+      "type": "standard",
+      "title": "no",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sorry about that. I'm still training and learning. Would you like to submit a better response you found or know?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": " Would you like to submit a better response you found or more information so I can improve?",
+            "options": [
+              {
+                "label": "yes",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "no",
+                "value": {
+                  "input": {
+                    "text": "no"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_6_1605217801125",
+      "conditions": "#no",
+      "dialog_node": "node_8_1605217801126",
+      "previous_sibling": "node_7_1605217801126"
+    },
+    {
+      "type": "standard",
+      "title": "no",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "That's okay, glad I could help!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1605485062285",
+      "conditions": "#no",
+      "dialog_node": "node_8_1605485062286",
+      "previous_sibling": "node_6_1605485062286"
+    },
+    {
+      "type": "standard",
+      "title": "no",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "That's okay, sorry I couldn't assist better. I am constantly training to provide a broader range of help. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1605208803387",
+      "conditions": "#no",
+      "dialog_node": "node_9_1605217147788",
+      "previous_sibling": "node_3_1605208994955"
+    },
+    {
+      "type": "standard",
+      "title": "yes ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Okay! Please share the answer you found!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1605217801126",
+      "conditions": "#yes",
+      "dialog_node": "node_9_1605217801126"
     },
     {
       "type": "response_condition",
       "output": {
         "generic": [
           {
-            "time": 2500,
+            "time": 2000,
             "typing": true,
             "response_type": "pause"
           }
         ]
       },
-      "parent": "node_1_1603839905851",
+      "parent": "node_1_1605206123225",
       "context": {
         "webhook_termX": "<? $webhook_termX ?>"
       },
       "conditions": "$webhook_termX",
-      "dialog_node": "response_3_1603839905852",
-      "previous_sibling": "node_2_1603839905852"
+      "dialog_node": "response_3_1605206123227",
+      "previous_sibling": "node_6_1605217801125"
     },
     {
       "type": "response_condition",
       "output": {
         "generic": [
           {
-            "time": 2500,
+            "time": 2000,
             "typing": true,
             "response_type": "pause"
           }
         ]
       },
-      "parent": "node_2_1604794826709",
+      "parent": "node_5_1605208375902",
       "context": {
         "webhook_termX": "<? $webhook_termX ?>"
       },
       "conditions": "$webhook_termX",
-      "dialog_node": "response_4_1604794826709",
-      "previous_sibling": "node_3_1604794826709"
-    },
-    {
-      "type": "response_condition",
-      "output": {
-        "generic": [
-          {
-            "time": 2500,
-            "typing": true,
-            "response_type": "pause"
-          }
-        ]
-      },
-      "parent": "node_4_1603828171345",
-      "context": {
-        "webhook_termX": "<? $webhook_termX ?>"
-      },
-      "conditions": "$webhook_termX",
-      "dialog_node": "response_5_1603834600038",
-      "previous_sibling": "node_5_1603834637225"
+      "dialog_node": "response_7_1605208375902",
+      "previous_sibling": "node_6_1605208375902"
     },
     {
       "type": "standard",
@@ -6979,13 +7941,7 @@
           {
             "values": [
               {
-                "text": "Hello. How can I help you?"
-              },
-              {
-                "text": "Hi, how can I help you?"
-              },
-              {
-                "text": "Hello! How can I assist you?"
+                "text": "Hello, I am the mips AMA chat-bot! How can I help you?"
               }
             ],
             "response_type": "text",
@@ -6993,7 +7949,7 @@
           }
         ]
       },
-      "conditions": "#General_Greetings || welcome",
+      "conditions": "welcome",
       "dialog_node": "Welcome"
     }
   ],
