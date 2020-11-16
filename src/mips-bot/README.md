@@ -7,7 +7,7 @@ Currently is capable of very simple conversation, logging user conversation to d
 *A few working sample conversation input examples:*
 - "hello", "hi"
 - "I need help", "help", "confused", "i am confused", "need assistance" "can you help me"
-- "What does <zOS term> mean", "<zOS term>"  **note: currently zOS terms must be spelled and punctuated correctly to work successfully**
+- "What does <zOS term> mean", "<zOS term>"  **note:** ~~currently zOS terms must be spelled and punctuated correctly to work successfully~~ **updated to allow spelling errors and fuzzy matching
 
 
 *Getting Started*
