@@ -90,6 +90,25 @@ app.post('/api/message', function(req, res) {
             });
         }
 
+        if (helpful.length > 0 && suggestGiven === 'no'){
+            // console.log('input', payload.input.text);
+            // console.log('helpful: ', helpful);
+            // console.log('suggest given: ', suggestGiven);
+            // console.log('suggestion context: '.cyan, suggestion_context);
+            var log_suggest = new crowd_suggestion({
+                session_id: payload.sessionId,
+                suggestion_context: suggestion_context,
+                suggestion: "no known response, no suggestion given"
+            });
+            log_suggest.save(function (err){ if(err) console.log(err);
+
+                helpful = '';
+                suggestGiven = '';
+                suggestion_context = '';
+                return 'suggestion logged successfully.';
+            });
+        }
+
         if (err) {
             return res.status(500).json({ err,  msg: 'error at assistant.message' });
         }
@@ -158,6 +177,10 @@ app.post('/api/message', function(req, res) {
                     helpful = temp_potential_suggest;
                     suggestGiven = 'yes';
                 }
+                if (checkIntent === 'no'){
+                    helpful = temp_potential_suggest;
+                    suggestGiven = 'no';
+                }
                 else{
                     temp_potential_suggest = '';
                     suggestion_context = '';
@@ -167,6 +190,9 @@ app.post('/api/message', function(req, res) {
             if (helpful.length > 0){
                 if (checkIntent === 'yes'){
                     suggestGiven = 'yes';
+                }
+                if (checkIntent === 'no'){
+                    suggestGiven = 'no';
                 }
                 else{
                     helpful = '';
