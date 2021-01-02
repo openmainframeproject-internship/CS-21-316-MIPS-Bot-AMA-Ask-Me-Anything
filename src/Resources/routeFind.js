@@ -11,7 +11,7 @@ async function getDefByTerm(mongoRL, term) {
 }
 
 function main(params) {
-    mongoRL='mongodb://cs21-316:watsonBotsonMango613@dbaas229.hyperp-dbaas.cloud.ibm.com:29466/botdb?authSource=admin&replicaSet=watbot&readPreference=primary&appname=MongoDB%20Compass&ssl=true'
+    mongoRL='mongodb://cs21-316:watsonBotsonMango613@dbaas229.hyperp-dbaas.cloud.ibm.com:29118/botdb?authSource=admin&replicaSet=watbot&readPreference=primary&appname=MongoDB%20Compass&ssl=true'
     switch(params.hook) {
         case "findByTerm":
             return getDefByTerm(mongoRL, params.term);
