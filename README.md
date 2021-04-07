@@ -13,7 +13,7 @@ a better understanding of the problems you encountered during the developmemnt o
 | [src](https://github.com/openmainframeproject-internship/CS-21-316-MIPS-Bot-AMA-Ask-Me-Anything/tree/master/src) | Source code - create as many subdirectories as needed |
 
 ## Project Team
-- *Len Santaluchia*  - *Linux Foundation* - Mentor
+- *Len Santalucia*  - *Linux Foundation* - Mentor
 - *Vincent Terrone*  - *Linux Foundation* - Mentor
 - *Yongkook(Alex) Kim*  - *Linux Foundation* - Technical Advisor
 - *Robert Dahlberg* - *Computer Science Department* - Faculty Advisor
