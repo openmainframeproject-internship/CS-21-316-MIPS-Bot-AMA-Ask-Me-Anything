@@ -5,9 +5,11 @@
 }
 
 body {
-  font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
+  /*font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  font-family: "Lucida Console", "Courier New", monospace;
   margin: 0;
   padding: 0;
+  background-color: rgb(161, 191, 191);
 }
 
 div {
@@ -18,6 +20,52 @@ div {
 .disclaimer {
   font-size: 0.75rem;
   padding: 0.5rem;
+}
+
+.navbar {
+  position: relative;
+  min-height: 20px;
+  font-size: 20px;
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+  color: #86c2cb;
+  background-color: #576f7a;
+}
+
+.navbar-brand {
+  color: #86c2cb;
+  font-size: 25px;
+  font-weight: 500;
+  padding-right: 7px;
+}
+
+.nav-item {
+  height: 50px;
+  padding: 15px 8px 15px 0px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #86c2cb;
+}
+
+.jumbotron {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background-color: lightcyan;
+}
+
+.jumbotron h1 {
+  margin-top: 10px;
+
+}
+
+.display-3{
+  font-size: 55px;
+}
+
+.jumbotron p {
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 #view-change-button {
@@ -48,6 +96,26 @@ div {
   display: inline-block;
 }
 
+.col-md-4 {
+  width:44%
+}
+
+.btn {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+  margin-bottom: 20px;
+}
+
+.btn-info{
+  align-items: center;
+  text-align: center;
+  font-size: 17px;
+  cursor: pointer;
+  border: 1px solid slategrey;
+  margin-bottom: 20px;
+}
+
 #contentParent {
   height: 100%;
 }
@@ -70,34 +138,47 @@ div {
 
 #chat-column-holder {
   text-align: center;
+  /*margin-top: -210px;*/
+  margin-left: 30px;
+  height: 180%;
+  width: 100%;
+
 }
 
 .chat-column {
   display: flex;
   flex-direction: column;
-  height: 90%;
+  height: 95%;
+  width: 85%;
   padding: 0.9375rem 0 0.625rem 0;
   margin: auto;
   text-align: left;
-  max-width: 25rem;
-  min-width: 9.375rem;
+  max-width: 30rem;
+  min-width: 20rem;
+  border: 1px solid #0b2224;
+  background-color: #535a5d;
+  border-color: #7d9f92;
 }
 
 .user-typing {
   flex: 0;
   border: none;
-  color: #8d25e8;
+  color: #212925;
   margin: 0.75rem;
   /*noinspection CssInvalidPropertyValue*/
-  font-size: 15;
+  font-size: 10px;
   font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 #scrollingChat {
-  margin: 0.75rem;
+  margin: 0.5rem;
+  margin-bottom: 0.3rem;
   overflow-y: auto;
   overflow-x: hidden;
   flex: 1;
+  border: solid 2px;
+  border-color: #64858c;
+  /*border-bottom: 1px solid #b2b2b2;*/
 }
 
 .message-inner {
@@ -127,15 +208,16 @@ div {
 
 .from-user {
   text-align: right;
+  maring-right: 5px;
 }
 
 .from-user .message-inner {
   position: relative;
-  font-size: 1rem;
-  color: #fff;
+  font-size: 14px;
+  color: #ecd6d6;
   letter-spacing: 0.015rem;
   line-height: 1.3125rem;
-  background: #00B4A0;
+  background: #39bf9e;
   border-radius: 1.25rem;
   border-bottom-right-radius: 0;
   text-align: left;
@@ -179,23 +261,24 @@ div {
   position: relative;
   border-radius: 1.5625rem;
   font-size: 1rem;
-  color: #B5B5B5;
+  color: #8fb0d6;
   letter-spacing: 0.015rem;
   line-height: 1.3125rem;
 }
 
 .from-watson.latest .message-inner {
-  color: #323232;
+  color: #8fb0d6;
 }
 
 .from-watson p {
   margin: 0.3125rem;
+  color: #8fb0d6;
   padding: 0 1.25rem;
 }
 
 .from-watson.latest.top p:before {
   content: ".";
-  color: #9855D4;
+  color: #9855d4;
   background-image: url("../img/marker_image.png");
   background-size: 0.3125rem 1.3125rem;
   position: absolute;
@@ -223,7 +306,7 @@ div {
 }
 
 #textInput.underline {
-  border-bottom: 2px solid #00B4A0;
+  border-bottom: 2px solid #0cabea;
 }
 
 ::-webkit-input-placeholder {
@@ -264,6 +347,7 @@ input:-moz-placeholder {
 }
 
 #payload-column {
+  display: none;
   font-family: Monaco, monospace;
   font-size: 0.75rem;
   letter-spacing: 0;
@@ -278,12 +362,14 @@ input:-moz-placeholder {
 }
 
 #payload-column.full {
+  display: none;
   width: 100%;
   max-width: none;
   min-width: initial;
 }
 
 #payload-column .header-text, #payload-column #payload-initial-message {
+  display: none;
   font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
   color: #9E9E9E;
@@ -344,6 +430,7 @@ html{
   }
 
   #payload-column {
+    display: none;
     width: 0;
     max-width: none;
     min-width: initial;
@@ -359,13 +446,13 @@ html{
 }
 
 .options-list {
-  color: #8d25e8;
+  color: #2c4539;
   cursor: pointer;
 }
 
 .options-button {
   color: white;
-  background-color: #8d25e8;
+  background-color: #212b26;
   border-radius: 6px;
   padding-bottom: 4px;
   padding-top: 4px;

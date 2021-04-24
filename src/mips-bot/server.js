@@ -6,7 +6,7 @@ require('colors');
 var express = require('express');
 var bodyParser = require('body-parser');
 // eslint-disable-next-line no-unused-vars
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
 const connectDB = require('./config/db.js');
 var logger = require('./model/Log.js');
 var feedback = require('./model/feedback.js');
@@ -95,7 +95,7 @@ app.post('/api/message', function(req, res) {
             // console.log('helpful: ', helpful);
             // console.log('suggest given: ', suggestGiven);
             // console.log('suggestion context: '.cyan, suggestion_context);
-            var log_suggest = new crowd_suggestion({
+            let log_suggest = new crowd_suggestion({
                 session_id: payload.sessionId,
                 suggestion_context: suggestion_context,
                 suggestion: "no known response, no suggestion given"
@@ -126,9 +126,12 @@ app.post('/api/message', function(req, res) {
             checkOut = data.result.output.generic[0].text;
         }
         else{
-            checkOut = data.result.output.generic[1].text;
+            if (data.result.output.generic[1]) {
+                checkOut = data.result.output.generic[1].text;
+            } else{
+            checkOut = "fill"
+            }
         }
-
         // check that feedback intent has been initialized and that user confirmed submitting
         // feedback, log session id, positive/negative, and user fb to db
         if (feedbackIntent.length > 0 && responseGiven === 'yes' && payload.input.text){

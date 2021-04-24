@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
   <base href="/">
   <title>Mips AMA Bot</title>
@@ -8,33 +8,89 @@
   <meta property="og:title" content="mips bot working" />
   <meta property="og:description" content="mips ama bot working in progress" />
   <link rel="shortcut icon" href="./favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="./css/app.css">
 </head>
 
 <body>
-  <div id="view-change-button" class="button" onclick="PayloadPanel.togglePanel(event, this)">
-    <img class="option full" src="./img/Chat Button.png">
-    <img class="option not-full" src="./img/Code Button.png">
-  </div>
-  <div id="contentParent" class="responsive-columns-wrapper">
-    <div id="chat-column-holder" class="responsive-column content-column">
-      <div class="chat-column">
-        <div id="scrollingChat"></div>
-        <p class="user-typing" id="user-typing-field"></p>
-        <label for="textInput" class="inputOutline">
-          <input id="textInput" class="input responsive-column" placeholder="Type something" type="text" onkeydown="ConversationPanel.inputKeyDown(event, this)"
-            autofocus>
-        </label>
-      </div>
+<!--  <div id="view-change-button" class="button" onclick="PayloadPanel.togglePanel(event, this)">-->
+<!--    <img class="option full" src="./img/Chat Button.png">-->
+<!--    <img class="option not-full" src="./img/Code Button.png">-->
+<!--  </div>-->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" >Mips AMA</a>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-item" > Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item"> About Us </a>
+        </li>
+      </ul>
     </div>
-    <div id="payload-column" class="fixed-column content-column">
-      <div id="payload-initial-message">
-        Type something to see the output
-      </div>
-      <div id="payload-request" class="payload"></div>
-      <div id="payload-response" class="payload"></div>
+  </nav>
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3"> Welcome to the Mips A.M.A.(Ask Me Anything) Site </h1>
+      <p> A chat bot developed to readily provide mainframe information and
+        grow a knowledge base inclusive of reliable crowd-sourced content. </p>
     </div>
   </div>
+
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2> Ask me anything! </h2>
+        <p> Start a conversation with the mips A.M.A
+          (Ask Me Anything) bot
+          and get answers for all your mainframe questions
+        </p>
+        <p> <a> <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#botchat" >Chat with mips
+          AMA bot</button> </a> </p>
+      </div>
+      <div id="botchat" class="collapse">
+
+        <div id="contentParent" class="responsive-columns-wrapper">
+          <div id="chat-column-holder" class="responsive-column content-column">
+            <div class="chat-column">
+              <div id="scrollingChat"></div>
+              <p class="user-typing" id="user-typing-field"></p>
+              <label for="textInput" class="inputOutline">
+                <input id="textInput" class="input responsive-column" placeholder="Type something" type="text" onkeydown="ConversationPanel.inputKeyDown(event, this)"
+                       autofocus>
+              </label>
+            </div>
+          </div>
+          <div id="payload-column" class="fixed-column content-column">
+            <div id="payload-initial-message">
+              Type something to see the output
+            </div>
+            <div id="payload-request" class="payload"></div>
+            <div id="payload-response" class="payload"></div>
+          </div>
+        </div>
+
+      </div> <!-- botchat collapse close -->
+
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
 
   <script src="./js/common.js"></script>
   <script src="./js/api.js"></script>
@@ -42,5 +98,6 @@
   <script src="./js/payload.js"></script>
   <script src="./js/global.js"></script>
   <script type="text/javascript" src="https://cdn.rawgit.com/watson-developer-cloud/watson-developer-cloud.github.io/master/analytics.js"></script>
+
 </body>
 </html>
