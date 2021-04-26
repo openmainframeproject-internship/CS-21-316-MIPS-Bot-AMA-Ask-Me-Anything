@@ -6,6 +6,8 @@
     "start": "node server"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "ibm-watson": "^5.7.1",
     "body-parser": "latest",
     "colors": "^1.4.0",
     "cookie-parser": "~1.4.4",
@@ -14,7 +16,6 @@
     "http-errors": "~1.6.3",
     "mongoose": "^5.10.9",
     "morgan": "~1.9.1",
-    "node": "^15.0.1",
     "pug": "2.0.0-beta11"
   },
   "devDependencies": {
