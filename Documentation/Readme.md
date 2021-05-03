@@ -4,7 +4,7 @@
 | [Statement of Work](#Statement-of-work) | Short description of the project, description of Current state, value, business requirements |
 | [Architecture](#Architecture) | High-level design.  Components and where they would exist (e.g. web server, database server, application server, z/OS |
 | [Detailed Design](#Detailed-Design) | Identify modules making up each component.  data flows between modules.  Also ERDs and other documentation depending upon technologies used |
-| [Installation Guide](#Installation-Guide) | How to install and configure the project |
+| [Installation Guide](#Installation) | How to install and configure the project |
 | [User Guide](#User-Guide) | Any user interface instructions |
 
 
