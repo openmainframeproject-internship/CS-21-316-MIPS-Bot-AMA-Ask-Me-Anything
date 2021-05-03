@@ -2,10 +2,10 @@
 | Document | Description |
 |---|---|
 | [Statement of Work](#Statement-of-work) | Short description of the project, description of Current state, value, business requirements |
-| Architecture | High-level design.  Components and where they would exist (e.g. web server, database server, application server, z/OS |
-| Detailed Design | Identify modules making up each component.  data flows between modules.  Also ERDs and other documentation depending upon technologies used |
-| Installation Guide| How to install and configure the project |
-| User Guide | Any user interface instructions |
+| [Architecture](#Architecture) | High-level design.  Components and where they would exist (e.g. web server, database server, application server, z/OS |
+| [Detailed Design](#Detailed-Design) | Identify modules making up each component.  data flows between modules.  Also ERDs and other documentation depending upon technologies used |
+| [Installation Guide](#Installation-Guide) | How to install and configure the project |
+| [User Guide](#User-Guide) | Any user interface instructions |
 
 
 ![Webpage](./Readme_imgs/webpage.png)
@@ -77,6 +77,9 @@
    - Navigate to `localhost:3000` to view the application.
 
 
+## User Guide
+
+<p> Expand this version of the Mips A.M.A bot to track confidence of the bots responses utilizing the exisiting logging script, personlize the dialogue by adding context variables to greetings, add content resources, and more. The existing bot is adaptable in it's implementation to be suited for a range of development routes with only small modifications. </p>
 
 
 [service_url]: https://www.ibm.com/cloud/watson-assistant/
