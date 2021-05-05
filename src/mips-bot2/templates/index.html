@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>
+    Mips Bot
+</title>
+{% endblock %}
+
+{% block body %}
+
+<header>
+    <h2> Ask me anything! </h2>
+</header>
+
+
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 style="text-align: center"> Suggest a new answer</h3>
+        Question: <span id="ques" class="ques"></span><br><br>
+        Answer: <span id="ans" class="ans"></span><br><br>
+
+        <form id="modal-form">
+            <label for="sug_answer"></label>
+            <input type="text" name="sug_answer" id="sug_answer" class="input">
+        </form>
+        <script>
+            let mform = document.getElementById("modal-form")
+            mform.addEventListener("submit", function(e) {
+                e.preventDefault()
+                let mformData = new FormData(mform);
+                fetch('/update/', {
+                    method:'post',
+                    body: mformData
+                }).then(data=>console.log(data))
+
+                document.getElementById("sug_answer").value = "";
+                modal.style.display = "none";
+
+            });
+        </script>
+    </div>
+</div>
+
+
+
+<div id="chat" class="chat">
+</div>
+
+<div class="form">
+
+    <form id="form">
+        <label for="question"></label>
+        <input type="text" name="question" id="question" class="input" required>
+        <input type="submit" id="submit" value="Send!" class="button">
+    </form>
+</div>
+
+<script>
+    let form = document.getElementById('form'); // get form element
+
+    form.addEventListener('submit', function(e) {   // function on form submission
+        e.preventDefault()  // prevent default form behavior
+
+        let question = new FormData(form);
+
+        let chat = document.getElementById('chat');
+        chat.classList.add("chat");
+
+        let qdiv = document.createElement("div");
+        qdiv.classList.add("qdiv");
+
+        let qdivtxt = document.createTextNode(document.getElementById('question').value);
+        qdiv.appendChild(qdivtxt);
+
+        chat.appendChild(qdiv);
+
+        qdiv.scrollIntoView(true);
+
+        document.getElementById("ques").innerHTML = document.getElementById('question').value;
+
+        fetch('/test/', {
+            method:'post',
+            body: question
+        })
+            .then(response=>response.json())
+            .then(function(json) {
+
+                document.getElementById("ans").innerHTML = json["output"]["generic"][0]["text"];
+
+                let adiv = document.createElement("div");
+                adiv.classList.add("adiv");
+
+                let answer = document.createElement("div");
+                answer.classList.add("answer");
+
+                let answertxt = document.createTextNode(json["output"]["generic"][0]["text"]);
+                answer.appendChild(answertxt);
+                adiv.appendChild(answer);
+                //setTimeout(()=>chat.appendChild(adiv), 1000);
+
+
+                let suggestions = document.createElement("div");
+                suggestions.classList.add("suggestions");
+
+                if (json["output"]["intents"][0]["intent"] === "Definition") {
+                    suggestions.innerHTML = `
+                    | <button id="myBtn" onclick="suggest()">Suggest</button> | <button id="Vote" onclick="vote()">Vote</button> | <button disabled>Options</button> |
+                `;
+                }
+
+                adiv.appendChild(suggestions);
+
+                chat.appendChild(adiv);
+
+                adiv.scrollIntoView(true);
+
+            })
+        document.getElementById("question").value = ""; // clear input field after submit
+    });
+
+    let modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    let btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    let span = document.getElementsByClassName("close")[0];
+
+    function suggest() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    function vote() {
+        fetch('/vote/');
+    }
+</script>
+
+
+
+
+
+{% endblock %}
