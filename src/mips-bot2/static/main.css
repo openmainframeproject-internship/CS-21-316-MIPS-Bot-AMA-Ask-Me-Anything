@@ -1,0 +1,187 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+body {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 35%, rgba(241,243,222,1) 100%);
+    background-attachment: fixed;
+}
+
+header {
+    height: 10%;
+    background: #7b113a;
+    text-align: center;
+}
+
+input {
+    width: 800px;
+}
+
+h2 {
+    margin: 0;
+    padding: 10px;
+    font-family: Asap, sans-serif;
+    color: #f1f3de;
+    font-size: 50px;
+}
+
+.form {
+    text-align: center;
+}
+.chat {
+    border: 1px solid #fff;
+    text-align: center;
+    width: 800px;
+    height: 600px;
+    overflow: auto;
+    margin:0 auto;
+}
+
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.qdiv {
+    border: 2px solid #fff;
+    background-color: #092834;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+    font-family: Asap, sans-serif;
+    font-size: 20px;
+    animation-duration: 1s;
+    animation-name: fadeIn;
+    width: 50%;
+    float: right;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 3px rgba(53,81,103,.5);
+}
+.adiv {
+    border: 2px solid #fff;
+    background-color: #347b98;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+    font-family: Asap, sans-serif;
+    font-size: 20px;
+    animation-duration: 3s;
+    animation-name: fadeIn;
+    width: 50%;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 3px rgba(53,81,103,.5);
+}
+.answer {
+
+}
+.suggestions {
+    margin-top: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    /*border-top: 1px solid #fff;*/
+    color: #f1f3de;
+}
+.suggestions a {
+    color: #f1f3de;
+}
+
+form {
+    font-size: 0;
+}
+.input {
+    font-size: 16px;
+    font-weight: bold;
+    width: 600px;
+    border: hidden;
+    outline: 1px solid #7b113a;
+}
+
+.input:focus {
+    border: hidden;
+    outline: 1px solid #7b113a;
+}
+
+.button {
+    font-size: 16px;
+    font-weight: bold;
+    width:200px;
+    background-color: antiquewhite;
+    border: hidden;
+    outline: 1px solid #7b113a;
+    transition: all .3s ease;
+}
+.button:hover {
+    color: #f1f3de;
+    background-color: #7b113a;
+}
+.button:focus {
+    border: hidden;
+    outline: 1px solid #7b113a;
+}
+
+button {
+    border: 1px solid black;
+    background-color: #f1f3de;
+    min-width: 75px;
+    border-radius: 5px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(-100%)}
+    100% { transform: translateY(0%)}
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    width: 600px;
+    height: 300px;
+    animation-duration: .2s;
+    animation-name: slideIn;
+    font-family: Asap, sans-serif;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ques, .ans {
+    font-family: monospace;
+    font-size: 14px;
+    font-style: italic;
+}
